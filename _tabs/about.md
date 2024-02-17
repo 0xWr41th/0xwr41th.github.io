@@ -4,5 +4,20 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+## Bio
+
+Systems Engineer and Cyber security specialist :computer:.
+
+I enjoy playing with new technologies and tools. I do some CTF's from time to time, currently I'm more interested on Cloud Technologies and DevSecOps.
+  
+## Certifications
+
+Some certs I hold right now:
+
+- OSCP
+- DevSecOps
+- Kubernetes
+
+
+
+
