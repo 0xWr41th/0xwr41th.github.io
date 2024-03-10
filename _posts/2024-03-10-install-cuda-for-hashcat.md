@@ -2,6 +2,7 @@
 layout: post
 title: Install CUDA for Hashcat
 date: 2024-03-10 00:41 -0400
+tags: ["hashcat","password-cracking"]
 ---
 
 This short tutorial covers how to install NVIDIA related drivers to execute hashcat for cracking passwords with NVIDIA GPU.
