@@ -19,5 +19,7 @@ Some certs I hold right now:
 - Kubernetes
 
 
+<img src="https://tryhackme-badges.s3.amazonaws.com/0xWr41th.png" alt="Your Image Badge" />
+
 
 
