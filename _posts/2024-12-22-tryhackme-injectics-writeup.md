@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TryHackMe - Injectics (Writeup)
+title: THM - Injectics Writeup
 date: 2024-12-22 22:46 -0300
 tags: ["thm","writeup","sqli","ssti"]
 ---
