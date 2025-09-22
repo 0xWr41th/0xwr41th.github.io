@@ -6,20 +6,14 @@ order: 4
 
 ## Bio
 
-Systems Engineer and Cyber security specialist :computer:.
-
-I enjoy playing with new technologies and tools. I do some CTF's from time to time, currently I'm more interested on Cloud Technologies and DevSecOps.
+Experienced Cybersecurity Specialist with over eight years of hands-on expertise in penetration testing, secure software development, and risk management within complex IT environments. Skilled in hardening cloud infrastructures and implementing DevSecOps practices. Holds advanced academic training in systems engineering and cybersecurity. Proven track record of strengthening security postures, driving compliance with industry standards, and delivering effective solutions across diverse industries. Currently relocating to Germany from October 2025 under a Chancenkarte Visa.
   
 ## Certifications
 
 Some certs I hold right now:
 
-- OSCP
-- DevSecOps
-- Kubernetes
+![](/assets/img/certs/offensive-security-certified-professional-oscp.png){: w="150" h="150" }
 
+![](/assets/img/certs/d8568b67-8882-4aa8-9445-452af383b5c7.png){: w="150" h="150" }
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/0xWr41th.png" alt="Your Image Badge" />
-
-
-
+![](/assets/img/certs/cka-certified-kubernetes-administrator.png){: w="150" h="150" }

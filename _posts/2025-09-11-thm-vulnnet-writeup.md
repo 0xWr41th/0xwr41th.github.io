@@ -2,11 +2,12 @@
 layout: post
 title: THM Vulnnet WriteUp
 date: 2025-09-11 01:50 -0400
-tags: ["thm","writeup","lfi","web"]
+categories: ["Writeup"]
+tags: ["thm","lfi","web"]
 ---
 
 In this occasion we will be solving TryHackMe's room
-URL: https://tryhackme.com/room/vulnnet1
+URL: [https://tryhackme.com/room/vulnnet1](https://tryhackme.com/room/vulnnet1)
 
 ### RECON
 

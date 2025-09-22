@@ -2,6 +2,7 @@
 layout: post
 title: Install CUDA for Hashcat
 date: 2024-03-10 00:41 -0400
+categories: ["Tutorials"]
 tags: ["hashcat","password-cracking"]
 ---
 

@@ -2,7 +2,8 @@
 layout: post
 title: THM - Injectics Writeup
 date: 2024-12-22 22:46 -0300
-tags: ["thm","writeup","sqli","ssti"]
+categories: ["Writeup"]
+tags: ["thm","sqli","ssti"]
 ---
 
 In this occasion we will be solving TryHackMe's room Injectics.
@@ -202,7 +203,3 @@ Finally, use the following payload to get the flag value.
 ## Summary
 
 This room included some interesting vulnerabilities, first bypassing a login page using SQLinjection bypass techniques, using a second order SQLinjection to get access to the admin panel, and finally using a Server Side Template Injection vulnerability in Twig template engine to achieve Remote Code Execution. I hope you like this writeup and. hack the planet!
-
-{% raw %}
-<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=67379" style="border:none;"></iframe>
-{% endraw %}

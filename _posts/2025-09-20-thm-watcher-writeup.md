@@ -2,7 +2,8 @@
 layout: post
 title: THM Watcher - Writeup
 date: 2025-09-20 16:58 -0400
-tags: ["thm","writeup","lfi","web"]
+categories: ["Writeup"]
+tags: ["thm","lfi","web"]
 ---
 
 In this occasion we will be solving TryHackMe's room
